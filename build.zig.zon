@@ -1,0 +1,28 @@
+.{
+    .name = .opusfile,
+    .version = "0.0.0",
+    .fingerprint = 0xc8c75234afe047ab, // Changing this has security and trust implications.
+    .minimum_zig_version = "0.15.2",
+    .dependencies = .{
+        .ogg = .{
+            .url = "git+https://github.com/nikneym/zig-ogg.git#63ab45f672604c359fd7a1e261c4307a6131877a",
+            .hash = "ogg-0.0.0-u2k5WCgFAAALPIcqzKnGm12UZwML92yvkbtp0Ki9eF-I",
+        },
+        .opus = .{
+            .url = "git+https://github.com/nikneym/zig-opus.git#b5258f368a3537822c8f8d51471f68b8312c4026",
+            .hash = "opus-0.0.0-Lo7BmL25NwAuo-fYhyoW9jAbjyuyYfNAVRy1jUbhmqly",
+        },
+        .opusfile = .{
+            .url = "git+https://github.com/xiph/opusfile.git#8890ea3e96cbeb813c8660bfb4222bad10009c60",
+            .hash = "N-V-__8AAN9sCADbZNEHdpij7mQwyJjLdTj8bJ_5_vtV7w8o",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        // For example...
+        //"LICENSE",
+        //"README.md",
+    },
+}
